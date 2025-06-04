@@ -1,4 +1,6 @@
   const container = document.querySelector('.escritos');
+  const button = document.getElementById('button');
+  const audio = document.getElementById('audio');
 
   function createHeart() {
     const heart = document.createElement('div');
@@ -15,3 +17,8 @@
   }
 
   setInterval(createHeart, 300); // frequência da chuva
+
+
+  button.addEventListener('click', () => {
+    audio.play()
+  })
